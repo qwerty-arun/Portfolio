@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arun K R</title>
+    <title>Aruns Portfolio</title>
     <style>
       body {
         background-color: #13181c;
         color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
-      .hello {
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hi {
         color: rgb(55, 145, 236);
         text-align: center;
       }
@@ -52,7 +62,11 @@
         border-radius: 10px;
         text-align: center;
         display: flex;
-        width: 75%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* allows items to wrap in smaller screens */
+        justify-content: center; /* centers all the boxes horizontally */
+        align-items: center;
       }
       .tech-stack .languages {
         align-items: center;
@@ -89,25 +103,26 @@
         width: 200px;
         margin: 20px;
       }
-      .tech-stack .certifications {
+      .tech-stack .coursework {
         align-items: center;
         border-radius: 10px;
         border: 2px solid white;
         width: 200px;
         margin: 20px;
       }
-      .tech-stack h3 {
-        border: 2px white solid;
-        border-radius: 5px;
-        width: 120px;
+    .tech-stack li{
+        list-style: none;
+        margin: 5px;
+    }
+    .tech-heading{
         text-align: center;
-      }
+    }
     </style>
   </head>
 
   <body>
-    <header>
-      <h1 class="hello">💫 Hi there, I'm Arun!</h1>
+    <header class="hello">
+      <h1 class="hi">💫 Hi there, I'm Arun!</h1>
       <h2 class="brief">
         🎓 Engineering student passionate about technology, design, and
         intelligent systems.
@@ -159,55 +174,53 @@
         </ul>
       </div>
 
-      <h2>Tech Stack</h2>
+      <h2 class="tech-heading">Tech Stack</h2>
       <div class="tech-stack">
         <div class="languages">
           <h3>Languages</h3>
-          <div class="c">C</div>
-          <div class="cpp">C++</div>
-          <div class="python">Python</div>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
         </div>
 
         <div class="ai">
           <h3>AI</h3>
-          <div class="Python">Python</div>
-          <div class="Numpy">Numpy</div>
-          <div class="Matplotlib">Matplotlib</div>
-          <div class="Pandas">Pandas</div>
+          <li>Numpy</li>
+          <li>Matplotlib</li>
+          <li>Pandas</li>
         </div>
 
         <div class="tools">
           <h3>Tools</h3>
-          <div class="Git">Git</div>
-          <div class="GitHub">GitHub</div>
-          <div class="Linux">Linux</div>
-          <div class="Vim">Vim</div>
-          <div class="Neovim">Neovim</div>
+          <li>GitHub</li>
+          <li>Linux</li>
+          <li>Vim</li>
+          <li>Neovim</li>
+          <li>VSCode</li>
         </div>
 
         <div class="full-stack">
           <h3>Full Stack</h3>
-          <div class="HTML">HTML</div>
-          <div class="CSS">CSS</div>
-          <div class="JavaScript">JavaScript</div>
-          <div class="React">React (basics)</div>
-          <div class="Nodejs">Node.js (basics)</div>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React (basics)</li>
+          <li>Node.js (basics)</li>
         </div>
 
         <div class="cloud">
           <h3>Cloud</h3>
-          <div class="Git">Git</div>
-          <div class="Docker">Docker</div>
-          <div class="Kubernetes">Kubernetes</div>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
         </div>
 
-        <div class="certifications">
-          <h3>Certifications</h3>
-          <div class="dsa">DSA</div>
-          <div class="os">OS</div>
-          <div class="oops">OOPS</div>
-          <div class="dbms">DBMS</div>
-          <div class="ccds">CCDS</div>
+        <div class="coursework">
+          <h3>Coursework</h3>
+          <li>OS</li>
+          <li>OOPS</li>
+          <li>DBMS</li>
+          <li>CCDS</li>
         </div>
       </div>
     </main>
