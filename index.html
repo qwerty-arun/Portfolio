@@ -5,115 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arun's Portfolio</title>
     <link rel="stylesheet" href="src/output.css" />
+    <style>
+      body {
+        background-color: #18181b;
+        color: #f4f4f5;
+        font-family: "Segoe UI", sans-serif;
+      }
+      .container {
+        max-width: 880px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: #23232a;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px #0002;
+      }
+      .section {
+        margin-bottom: 2rem;
+      }
+      h1,
+      h2 {
+        color: #ffe066;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.25em;
+      }
+      h2 {
+        font-size: 1.6rem;
+        margin: 1.2em 0 0.5em;
+      }
+      h3 {
+        color: #7dd3fc;
+        margin-bottom: 0.3em;
+      }
+      a {
+        color: #60a5fa;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .hr {
+        border-top: 1px solid #333;
+        margin: 1.7rem 0;
+      }
+      .tech-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+      }
+      .tech-col {
+        min-width: 130px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      li {
+        margin-bottom: 0.3em;
+      }
+      .social-icons a {
+        margin: 0 8px;
+      }
+      .tag {
+        background: #3730a3;
+        color: #fff;
+        font-size: 0.87em;
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin-right: 7px;
+      }
+      .highlight {
+        color: #fbbf24;
+      }
+      .subtitle {
+        color: #a1a1aa;
+      }
+    </style>
   </head>
-
-  <body class="m-0 p-0 bg-gray-900 text-white">
-    <header>
-      <h1 class="text-center text-blue-500 text-3xl font-bold font m-1 p-3">
-        Arun K R
-      </h1>
-      <h2 class="text-center text-amber-300 text-2xl italic m-4">
-        🎓 Engineering student passionate about technology, design, and
-        intelligent systems.
-      </h2>
-    </header>
-
-    <main class="">
-      <div class="flex justify-center">
-        <section class="items-center w-2xl text-center">
-          <h2 class="font-bold text-2xl m-4 text-center underline">
-            About Me
-          </h2>
-          <p class="text-center">
-            I’m an Engineering student specializing in Electronics and
-            Telecommunication at RV College of Engineering, Bengaluru.
-            Passionate about technology, design, and intelligent systems, I
-            enjoy building solutions that bridge the gap between hardware and
-            software.
-          </p>
-        </section>
-      </div>
-
-      <h2 class="text-center text-2xl m-4 font-bold underline">Socials</h2>
-      <div class="flex flex-row justify-center text-center m-6">
-          <a href="https://github.com/qwerty-arun" target="_blank">
-            <img
-              src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
-              alt="Github Logo "
-              width="40px"
-            />
-          </a>
-
-          <a href="https://www.linkedin.com/in/arunkr04/" target="_blank">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fcdsIUPUgmbvGaP-RC4RbHYdVtoN_fM8aya_8gOXI2BRtClESO-0_jgWTtKtIVmOQKs&usqp=CAU"
-              alt="Github Logo "
-              width="40px"
-            />
-          </a>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="section">
+        <h1 class="text-center font-bold">Arun K R</h1>
+        <div class="text-center">
+          Electronics & Telecommunication Engineering Student at RV College of
+          Engineering, Bengaluru
         </div>
+        <div style="margin-top: 0.65em" class="text-center m-4">
+          <span class="tag">Engineering</span>
+          <span class="tag">AI</span>
+          <span class="tag">ML</span>
+          <span class="tag">Robotics</span>
+          <span class="tag">Design</span>
+        </div>
+        <p class="mt-2 text-center">
+          Passionate about
+          <span class="highlight">Artificial Intelligence</span>,
+          <span class="highlight">Machine Learning</span>,
+          <span class="highlight">Robotics</span>, and
+          <span class="highlight">Intelligent Systems</span>.<br />
+        </p>
+      </header>
 
-      <h2 class="text-center text-2xl font-bold m-5 underline">Areas of Interest</h2>
-      <div class=" flex justify-center">
+      <div class="hr"></div>
+
+      <!-- What I Do -->
+      <section class="section">
+        <h2 class="font-bold">🔧 What I Do</h2>
+        <ul>
+          <li>
+            🎓 Studying <b>Electronics & Telecommunication Engineering</b>.
+          </li>
+          <li>
+            🤖 Enthusiast in <b>Artificial Intelligence</b> &
+            <b>Machine Learning</b>.
+          </li>
+          <li>
+            💻 Experienced in <b>C</b>, <b>C++</b>; expanding into <b>AI</b>,
+            <b>ML</b>, and <b>Data Science</b>.
+          </li>
+        </ul>
+      </section>
+
+      <div class="hr"></div>
+
+      <!-- Currently Learning -->
+      <section class="section">
+        <h2 class="font-bold">📚 Currently Learning</h2>
         <ul>
           <li>🤖 Artificial Intelligence & Machine Learning</li>
-          <li>📈 Data analysis, model training & evaluation</li>
-          <li>🧠 Applications of AI in engineering & robotics</li>
-          <li>🌐 Web Development</li>
+          <li>📈 Data Analysis, Model Training & Evaluation</li>
+          <li>🧠 Applications of AI in Computer Vision & Robotics</li>
         </ul>
-      </div>
+      </section>
 
-      <h2 class="m-5 text-2xl text-amber-50 font-bold text-center underline">Tech Stack</h2>
+      <div class="hr"></div>
 
-      <div class="flex flex-row justify-center">
-
-        <div class="m-2">
-          <h3 class="font-bold">Languages</h3>
-          <li>C</li>
-          <li>C++</li>
-          <li>Python</li>
+      <!-- Socials -->
+      <section class="section">
+        <h2 class="font-bold">🌐 Socials</h2>
+        <div
+          class="social-icons flex"
+          style="font-size: 1.3rem; margin-top: 0.7em"
+        >
+          <a
+            href="https://github.com/qwerty-arun"
+            target="_blank"
+            title="GitHub"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+              width="28"
+              alt="GitHub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arunkr04/"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4fcdsIUPUgmbvGaP-RC4RbHYdVtoN_fM8aya_8gOXI2BRtClESO-0_jgWTtKtIVmOQKs&usqp=CAU"
+              width="28"
+              alt="LinkedIn"
+            />
+          </a>
         </div>
+      </section>
 
-        <div class="m-2">
-          <h3 class="font-bold">AI</h3>
-          <li>Numpy</li>
-          <li>Matplotlib</li>
-          <li>Pandas</li>
-        </div>
+      <div class="hr"></div>
 
-        <div class="m-2">
-          <h3 class="font-bold">Tools</h3>
-          <li>GitHub</li>
-          <li>Linux</li>
-          <li>Vim</li>
-          <li>Neovim</li>
-          <li>VSCode</li>
+      <!-- Tech Stack -->
+      <section class="section">
+        <h2 class="font-bold">💻 Tech Stack</h2>
+        <div class="tech-grid">
+          <div class="tech-col">
+            <h3 class="font-bold">Languages</h3>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">AI / Data</h3>
+            <ul>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">Full Stack</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React (basics)</li>
+              <li>Node.js (basics)</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">Computer Vision</h3>
+            <ul>
+              <li>OpenCV (C++ and Python)</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">Cloud</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">Tools</h3>
+            <ul>
+              <li>VSCode</li>
+              <li>Linux</li>
+              <li>Vim / Neovim</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="tech-col">
+            <h3 class="font-bold">Coursework</h3>
+            <ul>
+              <li>Operating Systems</li>
+              <li>OOP</li>
+              <li>DBMS</li>
+              <li>Cloud Computing</li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <div class="m-2">
-          <h3 class="font-bold">Full Stack</h3>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React (basics)</li>
-          <li>Node.js (basics)</li>
-        </div>
+      <div class="hr"></div>
 
-        <div class="m-2">
-          <h3 class="font-bold">Cloud</h3>
-          <li>Git</li>
-          <li>Docker</li>
-          <li>Kubernetes</li>
-        </div>
+      <section class="section">
+        <h2 class="font-bold">Projects</h2>
+      </section>
 
-        <div class="m-2">
-          <h3 class="font-bold">Coursework</h3>
-          <li>OS</li>
-          <li>OOPS</li>
-          <li>DBMS</li>
-          <li>CCDS</li>
-        </div>
-      </div>
-    </main>
+    </div>
   </body>
 </html>
