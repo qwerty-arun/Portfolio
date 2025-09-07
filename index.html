@@ -57,13 +57,13 @@
       .tech-col {
         min-width: 130px;
       }
-      ul {
+      /* ul {
         list-style: none;
         padding-left: 0;
-      }
-      li {
+      } */
+      /* li {
         margin-bottom: 0.3em;
-      }
+      } */
       .social-icons a {
         margin: 0 8px;
       }
@@ -88,65 +88,36 @@
       <!-- Header -->
       <header class="section">
         <h1 class="text-center font-bold">Arun K R</h1>
-        <div class="text-center">
+        <div class="text-center font-bold">
           Electronics & Telecommunication Engineering Student at RV College of
           Engineering, Bengaluru
         </div>
-        <div style="margin-top: 0.65em" class="text-center m-4">
-          <span class="tag">Engineering</span>
-          <span class="tag">AI</span>
-          <span class="tag">ML</span>
-          <span class="tag">Robotics</span>
-          <span class="tag">Design</span>
-        </div>
-        <p class="mt-2 text-center">
-          Passionate about
-          <span class="highlight">Artificial Intelligence</span>,
-          <span class="highlight">Machine Learning</span>,
-          <span class="highlight">Robotics</span>, and
-          <span class="highlight">Intelligent Systems</span>.<br />
-        </p>
       </header>
 
       <div class="hr"></div>
 
-      <!-- What I Do -->
       <section class="section">
-        <h2 class="font-bold">🔧 What I Do</h2>
-        <ul>
-          <li>
-            🎓 Studying <b>Electronics & Telecommunication Engineering</b>.
-          </li>
-          <li>
-            🤖 Enthusiast in <b>Artificial Intelligence</b> &
-            <b>Machine Learning</b>.
-          </li>
-          <li>
-            💻 Experienced in <b>C</b>, <b>C++</b>; expanding into <b>AI</b>,
-            <b>ML</b>, and <b>Data Science</b>.
-          </li>
-        </ul>
-      </section>
-
-      <div class="hr"></div>
-
-      <!-- Currently Learning -->
-      <section class="section">
-        <h2 class="font-bold">📚 Currently Learning</h2>
-        <ul>
-          <li>🤖 Artificial Intelligence & Machine Learning</li>
-          <li>📈 Data Analysis, Model Training & Evaluation</li>
-          <li>🧠 Applications of AI in Computer Vision & Robotics</li>
-        </ul>
+        <h2 class="font-bold text-center">About Me</h2>
+        <p>
+          I am Arun K R, an Electronics and Telecommunication Engineering
+          student at RV College of Engineering, Bengaluru. I am deeply
+          passionate about Artificial Intelligence, Machine Learning, Robotics,
+          and Intelligent Systems. With a strong foundation in C and C++, I am
+          expanding my expertise into AI, ML, and Data Science. I enjoy
+          exploring applications of AI in computer vision and robotics, while
+          also focusing on data analysis, model training, and evaluation. My
+          goal is to integrate engineering knowledge with intelligent
+          technologies to build impactful solutions for the future.
+        </p>
       </section>
 
       <div class="hr"></div>
 
       <!-- Socials -->
       <section class="section">
-        <h2 class="font-bold">🌐 Socials</h2>
+        <h2 class="font-bold text-center">Socials</h2>
         <div
-          class="social-icons flex"
+          class="social-icons flex justify-center"
           style="font-size: 1.3rem; margin-top: 0.7em"
         >
           <a
@@ -178,7 +149,7 @@
 
       <!-- Tech Stack -->
       <section class="section">
-        <h2 class="font-bold">💻 Tech Stack</h2>
+        <h2 class="font-bold text-center">Tech Stack</h2>
         <div class="tech-grid">
           <div class="tech-col">
             <h3 class="font-bold">Languages</h3>
@@ -207,7 +178,8 @@
           <div class="tech-col">
             <h3 class="font-bold">Computer Vision</h3>
             <ul>
-              <li>OpenCV (C++ and Python)</li>
+              <li>OpenCV (Python)</li>
+              <li>OpenCV (C++)</li>
             </ul>
           </div>
           <div class="tech-col">
@@ -241,9 +213,81 @@
       <div class="hr"></div>
 
       <section class="section">
-        <h2 class="font-bold">Projects</h2>
-      </section>
+        <h2 class="font-bold text-center">Projects</h2>
 
+        <div class="droply">
+          <h2>Droply - Cloud File Storage App</h2>
+          <p class="italic font-bold">
+            Tech Stack: Next.js, TypeScript, Clerk, Tailwind CSS, ImageKit,
+            PostresSQL (Neon), Drizzle and Zod
+          </p>
+
+          <ul>
+            <li>
+              Built a Dropbox-inspired file storage app using Next.js,
+              TypeScript, and Tailwind CSS
+            </li>
+            <li>
+              Implemented secure authentication and session management with
+              Clerk
+            </li>
+            <li>
+              Integrated ImageKit for optimized image uploads and CDN delivery
+            </li>
+            <li>
+              Managed user and file data using PostgreSQL (Neon) with secured
+              route protection via middleware
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Low-Power Pre-Charged Sense Amplifier Design for SRAM</h2>
+          <p class="italic font-bold">
+            Tools: Cadence Virtuoso, Cadence Spectre, 90nm Technology
+          </p>
+          <ul>
+            <li>
+              Designed and optimized a latch type voltage sense amplifier for
+              low-power SRAM applications.
+            </li>
+            <li>
+              Implemented an equalization technique using a single PMOS
+              transistor to reduce dissipationi by 50.34%.
+            </li>
+            <li>
+              Achieved improved read speed and efficiency while maintaining
+              operational stability
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>
+            Audio Harmonic Synthesis and Filtering using LibSoX: A Comparision
+            Study
+          </h2>
+          <p class="italic font-bold">
+            Tech Stack: Bash Scripting, C, Sox (Library written in C), Audacity
+          </p>
+
+          <ul>
+            <li>
+              Sine, Triangular, Square, and Sawtooth waves were generated by SoX
+              commands and automated by a Bash Script
+            </li>
+            <li>
+              SoX’s lowpass and highpass filters were used to isolate or
+              suppress the harmonics
+            </li>
+            <li>
+              Frequency components before and after filtering were visualized
+              using Audacity’s spectrum analyzer
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
     </div>
   </body>
 </html>
