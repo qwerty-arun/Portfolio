@@ -57,16 +57,22 @@
       .tech-col {
         min-width: 130px;
       }
-      /* ul {
-        list-style: none;
-        padding-left: 0;
-      } */
-      /* li {
-        margin-bottom: 0.3em;
-      } */
+
+      ul {
+      list-style: disc;
+      padding-left: 1.5rem; /* indentation */
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.4em; /* spacing between bullet points */
+      }
+
       .social-icons a {
         margin: 0 8px;
       }
+
       .tag {
         background: #3730a3;
         color: #fff;
@@ -131,19 +137,25 @@
         </div>
       </header>
       <div class="text-center font-bold">
-        <a href="https://github.com/qwerty-arun" target="_blank" class="m-2">GitHub</a>
-        <a href="https://www.linkedin.com/in/arunkr04/" target="_blank" class="m-2">LinkedIn</a>
+        <a href="https://github.com/qwerty-arun" target="_blank" class="m-2"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/arunkr04/"
+          target="_blank"
+          class="m-2"
+          >LinkedIn</a
+        >
       </div>
     </div>
 
     <div class="container">
       <section class="section">
         <h2 class="font-bold text-center">About Me</h2>
-        <p>
-          I am Arun K R, an Electronics and Telecommunication Engineering
-          student at RV College of Engineering, Bengaluru. I am deeply
-          passionate about Artificial Intelligence, Machine Learning, Robotics,
-          and Intelligent Systems. With a strong foundation in C and C++, I am
+        <p class="font-bold">
+          I am a final year Engineering student at RVCE. I am deeply passionate
+          about Artificial Intelligence, Machine Learning, Robotics, and
+          Intelligent Systems. With a strong foundation in C and C++, I am
           expanding my expertise into AI, ML, and Data Science. I enjoy
           exploring applications of AI in Computer Vision and Robotics, while
           also focusing on data analysis, model training, and evaluation. My
@@ -176,7 +188,7 @@
         </div>
         <!-- Tab content area -->
         <div class="tab-content" id="tab-languages">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">C</span>
             <span class="tag-pill">C++</span>
             <span class="tag-pill">Python</span>
@@ -185,7 +197,7 @@
           </div>
         </div>
         <div class="tab-content" id="tab-ai" style="display: none">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">NumPy</span>
             <span class="tag-pill">Matplotlib</span>
             <span class="tag-pill">Pandas</span>
@@ -195,7 +207,7 @@
           </div>
         </div>
         <div class="tab-content" id="tab-fullstack" style="display: none">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">HTML</span>
             <span class="tag-pill">CSS</span>
             <span class="tag-pill">JavaScript</span>
@@ -207,14 +219,14 @@
           </div>
         </div>
         <div class="tab-content" id="tab-cloud" style="display: none">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">Docker</span>
             <span class="tag-pill">Kubernetes</span>
             <span class="tag-pill">Cloud Computing</span>
           </div>
         </div>
         <div class="tab-content" id="tab-tools" style="display: none">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">VSCode</span>
             <span class="tag-pill">Linux</span>
             <span class="tag-pill">Vim / Neovim</span>
@@ -224,7 +236,7 @@
           </div>
         </div>
         <div class="tab-content" id="tab-coursework" style="display: none">
-          <div class="tag-list">
+          <div class="tag-list font-bold">
             <span class="tag-pill">Operating Systems</span>
             <span class="tag-pill">OOP</span>
             <span class="tag-pill">DBMS</span>
@@ -237,16 +249,32 @@
 
     <div class="container">
       <section class="section">
-        <h2 class="font-bold text-center">Projects</h2>
+        <h2 class="font-bold text-center">Experience</h2>
+
+        <div class="experience">
+          <h2 class="font-bold">Intern at Center of Excellence in Computer Vision Research</h3>
+            <h3 class="italic font-bold">Tech Stack: YOLOv10, OpenCV, Flask, Luxriot</h3>
+          <ul class="font-bold">
+            <li>Implementing real-time person detection using YOLOv10 pre-trained model for real-time crowd analysis.</li>
+            <li>Building a Flask-based web dashboard to monitor crowd size and thresholds.</li>
+            <li>Integrating desktop alerts and live video overlays for crowd management</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2 class="font-bold text-5xl text-center">Projects</h2>
 
         <div class="droply">
-          <h2>Droply - Cloud File Storage App</h2>
-          <p class="italic font-bold">
-            Tech Stack: Next.js, TypeScript, Clerk, Tailwind CSS, ImageKit,
+          <h2 class="font-bold">Droply - Cloud File Storage App</h2>
+          <h3 class="italic font-bold">
+            Tech Stack: Next.js, TypeScript, Clerk, ImageKit,
             PostresSQL (Neon), Drizzle and Zod
-          </p>
+          </h3>
 
-          <ul>
+          <ul class="font-bold">
             <li>
               Built a Dropbox-inspired file storage app using Next.js,
               TypeScript, and Tailwind CSS
@@ -266,11 +294,35 @@
         </div>
 
         <div>
-          <h2>Low-Power Pre-Charged Sense Amplifier Design for SRAM</h2>
-          <p class="italic font-bold">
+          <h2 class="font-bold">Full Stack AI Agent with Inngest and Gemini</h2>
+          <h3 class="italic font-bold">
+            Tech Stack: Inngest, Gemini, React, ExpressJS, MongoDB and
+            Nodemailer
+          </h3>
+
+          <ul class="font-bold">
+            <li>
+              Built a production-grade AI-powered ticketing system with Inngest,
+              Gemini LLM, ExpressJS, and MongoDB, handling200+ tickets/day.
+            </li>
+            <li>
+              Automated 85% of ticket triage, prioritization, and assignment
+              using Gemini LLM, reducing average resolutiontimeby40%.
+            </li>
+            <li>
+              Implemented secure JWT-based authentication with Role-Based Access
+              Control, integrated Nodemailer for real-timeemailnotifications,
+              built a responsive React + Tailwind frontend.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold">Low-Power Pre-Charged Sense Amplifier Design for SRAM</h2>
+          <h3 class="italic font-bold">
             Tools: Cadence Virtuoso, Cadence Spectre, 90nm Technology
-          </p>
-          <ul>
+          </h3>
+          <ul class="font-bold">
             <li>
               Designed and optimized a latch type voltage sense amplifier for
               low-power SRAM applications.
@@ -287,15 +339,15 @@
         </div>
 
         <div>
-          <h2>
+          <h2 class="font-bold">
             Audio Harmonic Synthesis and Filtering using LibSoX: A Comparision
             Study
           </h2>
-          <p class="italic font-bold">
+          <h3 class="italic font-bold">
             Tech Stack: Bash Scripting, C, Sox (Library written in C), Audacity
-          </p>
+          </h3>
 
-          <ul>
+          <ul class="font-bold">
             <li>
               Sine, Triangular, Square, and Sawtooth waves were generated by SoX
               commands and automated by a Bash Script
@@ -308,7 +360,6 @@
               Frequency components before and after filtering were visualized
               using Audacity’s spectrum analyzer
             </li>
-            <li></li>
           </ul>
         </div>
       </section>
