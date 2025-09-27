@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arun's Portfolio</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <style>
+      body {
+        background-color: #18181b;
+        color: #f4f4f5;
+        font-family: "Segoe UI", sans-serif;
+        text-align: center; /* Center align all text */
+      }
+      .container {
+        max-width: 780px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: #23232a;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px #0002;
+      }
+      .section {
+        margin-bottom: 2rem;
+      }
+      h1,
+      h2 {
+        color: #ffe066;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.25em;
+      }
+      h2 {
+        font-size: 1.6rem;
+        margin: 1.2em 0 0.5em;
+      }
+      h3 {
+        color: #7dd3fc;
+        margin-bottom: 0.3em;
+      }
+      a {
+        color: #60a5fa;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .hr {
+        border-top: 1px solid #333;
+        margin: 1.7rem 0;
+      }
+      .tech-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+      }
+      .tech-col {
+        min-width: 130px;
+      }
+
+      ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: left; /* keep bullet points aligned left */
+      }
+
+      li {
+        margin-bottom: 0.4em;
+      }
+
+      .social-icons a {
+        margin: 0 8px;
+      }
+
+      .tag {
+        background: #3730a3;
+        color: #fff;
+        font-size: 0.87em;
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin-right: 7px;
+      }
+      .highlight {
+        color: #fbbf24;
+      }
+      .subtitle {
+        color: #a1a1aa;
+      }
+
+      /* FIX: Tech stack tab bar responsive */
+      .tab-bar {
+        display: flex;
+        flex-wrap: wrap; /* allow wrapping */
+        gap: 15px;
+        justify-content: center;
+        margin-bottom: 14px;
+        border-bottom: 1.5px solid #292944;
+      }
+      .tab-bar .tab {
+        padding: 7px 16px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1.05em;
+        border-bottom: 2px solid transparent;
+        transition: color 0.15s, border-bottom 0.19s;
+        color: #b5b5d0;
+      }
+      .tab-bar .tab.active {
+        color: #6699ff;
+        border-bottom: 2.5px solid #6699ff;
+        font-weight: bold;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 18px;
+        margin-top: 18px;
+        justify-content: center;
+      }
+      .tag-pill {
+        background: #282861;
+        color: #fff;
+        font-size: 1em;
+        padding: 7px 18px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px #17174433;
+        transition: background 0.17s, color 0.17s;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="section">
+        <h1 class="font-bold">Arun K R</h1>
+        <div class="font-bold">
+          Electronics & Telecommunication Engineering Student at RV College of
+          Engineering, Bengaluru
+        </div>
+      </header>
+      <div class="font-bold">
+        <a href="https://github.com/user" target="_blank" class="m-2">GitHub</a>
+        <a href="https://www.linkedin.com/in/user" target="_blank" class="m-2"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2 class="font-bold">About Me</h2>
+        <p class="font-bold">
+          I am a final year Engineering student at RVCE. I am deeply passionate
+          about Artificial Intelligence, Machine Learning, Robotics, and
+          Intelligent Systems. With a strong foundation in C and C++, I am
+          expanding my expertise into AI, ML, and Data Science. I enjoy
+          exploring applications of AI in Computer Vision and Robotics, while
+          also focusing on data analysis, model training, and evaluation. My
+          goal is to integrate engineering knowledge with intelligent
+          technologies to build impactful solutions for the future.
+        </p>
+      </section>
+    </div>
+
+    <div class="container">
+      <!-- Tech Stack -->
+      <section class="section">
+        <h2 class="font-bold">Tech Stack</h2>
+        <div class="tab-bar">
+          <div class="tab active" data-tab="languages">Languages</div>
+          <div class="tab" data-tab="ai">AI</div>
+          <div class="tab" data-tab="fullstack">FullStack</div>
+          <div class="tab" data-tab="cloud">Cloud</div>
+          <div class="tab" data-tab="tools">Tools</div>
+          <div class="tab" data-tab="coursework">Coursework</div>
+        </div>
+        <!-- Tab content area -->
+        <div class="tab-content" id="tab-languages">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">C</span>
+            <span class="tag-pill">C++</span>
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">JavaScript</span>
+            <span class="tag-pill">TypeScript</span>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-ai" style="display: none">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">NumPy</span>
+            <span class="tag-pill">Matplotlib</span>
+            <span class="tag-pill">Pandas</span>
+            <span class="tag-pill">OpenCV</span>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-fullstack" style="display: none">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">HTML</span>
+            <span class="tag-pill">CSS</span>
+            <span class="tag-pill">JavaScript</span>
+            <span class="tag-pill">TypeScript</span>
+            <span class="tag-pill">React</span>
+            <span class="tag-pill">Node.js</span>
+            <span class="tag-pill">Next.js</span>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-cloud" style="display: none">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">Docker</span>
+            <span class="tag-pill">Kubernetes</span>
+            <span class="tag-pill">Cloud Computing</span>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-tools" style="display: none">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">VSCode</span>
+            <span class="tag-pill">CLion</span>
+            <span class="tag-pill">Linux</span>
+            <span class="tag-pill">Vim/Neovim</span>
+            <span class="tag-pill">Git/GitHub</span>
+            <span class="tag-pill">Bash</span>
+            <span class="tag-pill">Make</span>
+            <span class="tag-pill">CMake</span>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-coursework" style="display: none">
+          <div class="tag-list font-bold">
+            <span class="tag-pill">Operating Systems</span>
+            <span class="tag-pill">OOP</span>
+            <span class="tag-pill">DBMS</span>
+            <span class="tag-pill">Cloud Computing</span>
+            <span class="tag-pill">DSA (C,C++)</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2 class="font-bold text-center">Experience</h2>
+
+        <div class="experience">
+          <h2 class="font-bold">Intern at Center of Excellence in Computer Vision Research</h3>
+            <h3 class="italic font-bold">Tech Stack: Luxriot EVO, YOLOv10, OpenCV, Flask, Python, mss, ngrok, plyer, GitHub</h3>
+          <ul class="font-bold">
+            <li>Implementing real-time person detection using YOLOv10 pre-trained model for real-time crowd analysis.</li>
+            <li>Building a Flask-based web dashboard to monitor crowd size and thresholds.</li>
+            <li>Integrating desktop alerts and live video overlays for crowd management.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="section">
+        <h2 class="font-bold text-5xl text-center">Projects</h2>
+
+        <div class="droply">
+          <h2 class="font-bold">Droply - Cloud File Storage App</h2>
+          <h3 class="italic font-bold">
+            Tech Stack: Next.js, TypeScript, Clerk, ImageKit,
+            PostresSQL (Neon), Drizzle and Zod
+          </h3>
+
+          <ul class="font-bold">
+            <li>
+              Built a Dropbox-inspired file storage app using Next.js,
+              TypeScript, and Tailwind CSS.
+            </li>
+            <li>
+              Implemented secure authentication and session management with
+              Clerk.
+            </li>
+            <li>
+              Integrated ImageKit for optimized image uploads and CDN delivery.
+            </li>
+            <li>
+              Managed user and file data using PostgreSQL (Neon) with secured
+              route protection via middleware.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold">Full Stack AI Agent with Inngest and Gemini</h2>
+          <h3 class="italic font-bold">
+            Tech Stack: Inngest, Gemini, React, ExpressJS, MongoDB and
+            Nodemailer
+          </h3>
+
+          <ul class="font-bold">
+            <li>
+              Built a production-grade AI-powered ticketing system with Inngest,
+              Gemini LLM, ExpressJS, and MongoDB, handling 200+ tickets/day.
+            </li>
+            <li>
+              Automated 85% of ticket triage, prioritization, and assignment
+              using Gemini LLM, reducing average resolution time by 40%.
+            </li>
+            <li>
+              Implemented secure JWT-based authentication with Role-Based Access
+              Control, integrated Nodemailer for real-timeemailnotifications,
+              built a responsive React + Tailwind frontend.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold">Low-Power Pre-Charged Sense Amplifier Design for SRAM</h2>
+          <h3 class="italic font-bold">
+            Tools: Cadence Virtuoso, Cadence Spectre, 90nm Technology
+          </h3>
+          <ul class="font-bold">
+            <li>
+              Designed and optimized a latch type voltage sense amplifier for
+              low-power SRAM applications.
+            </li>
+            <li>
+              Implemented an equalization technique using a single PMOS
+              transistor to reduce dissipationi by 50.34%.
+            </li>
+            <li>
+              Achieved improved read speed and efficiency while maintaining
+              operational stability.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold">
+            Audio Harmonic Synthesis and Filtering using LibSoX: A Comparision
+            Study
+          </h2>
+          <h3 class="italic font-bold">
+            Tech Stack: Bash Scripting, C, Sox (Library written in C), Audacity
+          </h3>
+
+          <ul class="font-bold">
+            <li>
+              Sine, Triangular, Square, and Sawtooth waves were generated by SoX
+              commands and automated by a Bash Script.
+            </li>
+            <li>
+              SoX’s lowpass and highpass filters were used to isolate or
+              suppress the harmonics.
+            </li>
+            <li>
+              Frequency components before and after filtering were visualized
+              using Audacity’s spectrum analyzer.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.querySelectorAll(".tab-bar .tab").forEach((tab) => {
+        tab.addEventListener("click", function () {
+          document
+            .querySelectorAll(".tab-bar .tab")
+            .forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((tc) => (tc.style.display = "none"));
+          document.getElementById(
+            "tab-" + tab.getAttribute("data-tab")
+          ).style.display = "";
+        });
+      });
+    </script>
+  </body>
+</html>
