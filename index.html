@@ -1,147 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arun's Portfolio</title>
-  <style>
-    body {
-      background-color: #0b0b11;
-      color: #d1d5db;
-      font-family: "Fira Code", "Courier New", monospace;
-      padding: 1.5rem;
-    }
-    .terminal {
-      max-width: 1050px;
-      margin: auto;
-      border: 2px solid #6366f1;
-      border-radius: 8px;
-      padding: 1.5rem;
-      background: #050507;
-      box-shadow: 0 0 20px #4f46e5;
-    }
-    .command {
-      color: #60a5fa;
-      font-weight: bold;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arun's Portfolio</title>
+<style>
+  body {
+    background-color: #0b0b11;
+    color: #d1d5db;
+    font-family: "Fira Code", "Courier New", monospace;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .terminal {
+    max-width: 1000px;
+    margin: 1rem auto;
+    border: 2px solid #6366f1;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #050507;
+    box-shadow: 0 0 20px #4f46e5;
+    overflow-x: auto;
+  }
+
+  .command {
+    /* color: #60a5fa; */
+    color: #34d399;
+    font-weight: bold;
+    display: block;
+    margin: 1rem;
+  }
+
+  .output {
+    margin: 1.5rem;
+    /* margin-bottom: 1rem; */
+    line-height: 1.5rem;
+  }
+
+  /* Grid layout for aligned label-value */
+  .label-value {
+    display: grid;
+    grid-template-columns: 140px auto; /* fixed label width */
+    margin-bottom: 0.3rem;
+  }
+
+  .label {
+    color: #a78bfa;
+    font-weight: bold;
+  }
+
+  a {
+    color: #22d3ee;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  a:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+  }
+
+  .blink {
+    display: inline-block;
+    width: 10px;
+    background: #10b981;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .project-title {
+    color: #818cf8;
+    /* color: #fbbf24; */
+    font-weight: bold;
+    margin-top: 0.8rem;
+  }
+
+  .project-tech {
+    color: #22d3ee;
+    /* color: #60a5fa; */
+    margin-bottom: 0.2rem;
+  }
+
+  .project-features {
+    margin-left: 1.5rem;
+    list-style: disc;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 600px) {
+    .label-value {
+      grid-template-columns: 1fr; /* stack label and value */
     }
     .output {
-      margin-left: 1rem;
-      white-space: pre-wrap;
-      margin-bottom: 1.2rem;
-      line-height: 1.55rem;
-    }
-    .label {
-      color: #a78bfa;
-    }
-    a {
-      color: #22d3ee;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #38bdf8;
-    }
-    .blink {
-      display: inline-block;
-      width: 10px;
-      background: #10b981;
-      animation: blink 1s infinite;
-    }
-    @keyframes blink {
-      0%, 50% {opacity:1;}
-      51%, 100% {opacity:0;}
-    }
-    .project-title {
-      color: #818cf8;
-      font-weight: bold;
-    }
-    .project-tech {
-      color: #22d3ee;
+      margin-left: 0.8rem;
     }
     .project-features {
-      color: #d1d5db;
       margin-left: 1rem;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <div class="terminal" id="terminal">
-    <div><span class="command">arunkr@rvce:~$</span> ./intro.sh</div>
-    <div class="output">
-      <span class="label">Name:</span> Arun K R  
-      <span class="label">Role:</span> Electronics & Telecommunication Engineering Student @ RVCE, Bengaluru  
-      <span class="label">Interests:</span> AI, ML, Robotics, Intelligent Systems  
-      <span class="label">GitHub:</span> <a href="https://github.com/qwerty-arun" target="_blank">github.com/qwerty-arun</a>  
-      <span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/arunkr04" target="_blank">linkedin.com/in/arunkr04</a>  
-    </div>
+<div class="terminal">
 
-    <div><span class="command">arunkr@rvce:~$</span> ./about.sh</div>
-    <div class="output">
-    I am a final year engineering student driven by a keen passion for AI, ML, Data Science, and Robotics. 
-    My interests lie in Computer Vision, Data Analysis, and building Intelligent Systems. 
-    I aspire to integrate engineering concepts with advanced technologies to create impactful solutions.
-    </div>
-
-    <div><span class="command">arunkr@rvce:~$</span> ls tech_stack/</div>
-    <div class="output">
-      <span class="label">Languages:</span> C, C++, Python, JavaScript
-      <span class="label">AI:</span> NumPy, Matplotlib, Pandas, OpenCV  
-      <span class="label">FullStack:</span> HTML, CSS, React, Next.js, Node.js  
-      <span class="label">Cloud:</span> Docker, Kubernetes, Cloud Computing  
-      <span class="label">Tools:</span> VSCode, Linux, Vim, CLion, Make, CMake, Git/GitHub, Bash
-      <span class="label">Coursework:</span> OS, OOP, DBMS, Cloud Computing, DSA  
-    </div>
-
-    <div><span class="command">arunkr@rvce:~$</span> cat experience.txt</div>
-    <div class="output">
-      <span class="label">[Intern - Center of Excellence in Computer Vision Research]</span>
-      <span class="project-tech">Tech Stack: YOLOv10, OpenCV, Python, Flask, mss, plyer, scrcpy, ngrok</span>
-      - Developed real-time crowd analysis and person detection using YOLOv10 and OpenCV.
-      - Built a Flask-based dashboard for live monitoring and alerting.
-      - Integrated desktop notifications and video overlays for proactive crowd management.
-    </div>
-
-    <div><span class="command">arunkr@rvce:~$</span> cat projects.log</div>
-    <div class="output">
-      <span class="project-title">[Droply - Cloud File Storage App]</span>
-      <span class="project-tech">Tech Stack: Next.js, TypeScript, Clerk, ImageKit, PostgreSQL (Neon), Drizzle, Zod, Tailwind</span>
-<span class="project-features">
-      - Dropbox-inspired application enabling secure file storage with responsive UI.
-      - Authentication and session management integrated using Clerk.
-      - Real-time image upload optimization with ImageKit and CDN delivery.
-      - User and file data securely managed and protected via PostgreSQL and middleware.
-</span>
-
-      <span class="project-title">[Full Stack AI Agent with Inngest and Gemini]</span>
-      <span class="project-tech">Tech Stack: Inngest, Gemini LLM, React, ExpressJS, MongoDB, Nodemailer</span>
-<span class="project-features">
-      - Production-grade AI-powered ticketing system processing 200+ tickets daily.
-      - Automated ticket triage, prioritization, and assignment to reduce manual intervention by 85%.
-      - JWT-based authentication with role-based access control.
-      - Responsive React frontend; real-time notifications with Nodemailer.
-      - Reduced average ticket resolution time by 40%.
-</span>
-
-      <span class="project-title">[Low-Power Pre-Charged Sense Amplifier for SRAM]</span>
-      <span class="project-tech">Tools: Cadence Virtuoso, Cadence Spectre, 90nm Technology</span>
-<span class="project-features">
-      - Designed and optimized latch-type voltage sense amplifier for ultra-low-power SRAM.
-      - Implemented PMOS-based equalization reducing power dissipation by 50.34%.
-      - Improved read speed, efficiency, and operational stability in memory circuits.
-</span>
-
-      <span class="project-title">[Audio Harmonic Synthesis and Filtering using LibSoX]</span>
-      <span class="project-tech">Tech Stack: Bash, C, LibSoX, Audacity</span>
-<span class="project-features">
-      - Automated generation of sine, triangular, square, and sawtooth waves using Bash scripts and SoX.
-      - Applied lowpass and highpass filters to suppress or isolate harmonics.
-      - Used Audacity’s spectrum analyzer for frequency analysis before and after filtering.
-      - Comparative study on effectiveness of harmonic isolation and synthesis methods.
-</span>
-    </div>
-
-    <div><span class="command">arunkr@rvce:~$</span> exit</div>
-    <span class="blink"></span>
+  <div class="command">arunkr@rvce:~$ ./intro.sh</div>
+  <div class="output">
+    <div class="label-value"><div class="label">Name:</div> Arun K R</div>
+    <div class="label-value"><div class="label">Role:</div> Electronics & Telecommunication Engineering Student @ RVCE, Bengaluru</div>
+    <div class="label-value"><div class="label">Interests:</div> AI, ML, Robotics, Intelligent Systems</div>
+    <div class="label-value"><div class="label">GitHub:</div> <a href="https://github.com/user" target="_blank">github.com/qwerty-arun</a></div>
+    <div class="label-value"><div class="label">LinkedIn:</div> <a href="https://www.linkedin.com/in/" target="_blank">linkedin.com/in/arunkr04</a></div>
   </div>
+
+  <div class="command">arunkr@rvce:~$ ./about.sh</div>
+  <div class="output">
+    I am a final year engineering student driven by a keen passion for AI, ML, Data Science, and Robotics.
+    My interests lie in Computer Vision, Data Analysis, and building Intelligent Systems.
+    I aspire to integrate engineering concepts with advanced technologies to create impactful solutions.
+  </div>
+
+  <div class="command">arunkr@rvce:~$ ls tech_stack/</div>
+  <div class="output">
+    <div class="label-value"><div class="label">Languages:</div> C, C++, Python, JavaScript</div>
+    <div class="label-value"><div class="label">AI:</div> NumPy, Matplotlib, Pandas, OpenCV</div>
+    <div class="label-value"><div class="label">FullStack:</div> HTML, CSS, React, Next.js, Node.js</div>
+    <div class="label-value"><div class="label">Cloud:</div> Docker, Kubernetes, Cloud Computing</div>
+    <div class="label-value"><div class="label">Tools:</div> VSCode, Linux, Vim, CLion, Make, CMake, Git/GitHub, Bash</div>
+    <div class="label-value"><div class="label">Coursework:</div> OS, OOP, DBMS, Cloud Computing, DSA</div>
+  </div>
+
+  <div class="command">arunkr@rvce:~$ cat experience.txt</div>
+  <div class="output">
+    <div class="project-title">[Intern - Center of Excellence in Computer Vision Research]</div>
+    <div class="project-tech">Tech Stack: YOLOv10, OpenCV, Python, Flask, mss, plyer, scrcpy, ngrok</div>
+    <ul class="project-features">
+      <li>Developed real-time crowd analysis and person detection using YOLOv10 and OpenCV.</li>
+      <li>Built a Flask-based dashboard for live monitoring and alerting.</li>
+      <li>Integrated desktop notifications and video overlays for proactive crowd management.</li>
+    </ul>
+  </div>
+
+  <div class="command">arunkr@rvce:~$ cat projects.log</div>
+  <div class="output">
+    <div class="project-title">[Droply - Cloud File Storage App]</div>
+    <div class="project-tech">Tech Stack: Next.js, TypeScript, Clerk, ImageKit, PostgreSQL (Neon), Drizzle, Zod, Tailwind</div>
+    <ul class="project-features">
+      <li>Dropbox-inspired application enabling secure file storage with responsive UI.</li>
+      <li>Authentication and session management integrated using Clerk.</li>
+      <li>Real-time image upload optimization with ImageKit and CDN delivery.</li>
+      <li>User and file data securely managed and protected via PostgreSQL and middleware.</li>
+    </ul>
+
+    <div class="project-title">[Full Stack AI Agent with Inngest and Gemini]</div>
+    <div class="project-tech">Tech Stack: Inngest, Gemini LLM, React, ExpressJS, MongoDB, Nodemailer</div>
+    <ul class="project-features">
+      <li>Production-grade AI-powered ticketing system processing 200+ tickets daily.</li>
+      <li>Automated ticket triage, prioritization, and assignment to reduce manual intervention by 85%.</li>
+      <li>JWT-based authentication with role-based access control.</li>
+      <li>Responsive React frontend; real-time notifications with Nodemailer.</li>
+      <li>Reduced average ticket resolution time by 40%.</li>
+    </ul>
+
+    <div class="project-title">[Low-Power Pre-Charged Sense Amplifier for SRAM]</div>
+    <div class="project-tech">Tools: Cadence Virtuoso, Cadence Spectre, 90nm Technology</div>
+    <ul class="project-features">
+      <li>Designed and optimized latch-type voltage sense amplifier for ultra-low-power SRAM.</li>
+      <li>Implemented PMOS-based equalization reducing power dissipation by 50.34%.</li>
+      <li>Improved read speed, efficiency, and operational stability in memory circuits.</li>
+    </ul>
+
+    <div class="project-title">[Audio Harmonic Synthesis and Filtering using LibSoX]</div>
+    <div class="project-tech">Tech Stack: Bash, C, LibSoX, Audacity</div>
+    <ul class="project-features">
+      <li>Automated generation of sine, triangular, square, and sawtooth waves using Bash scripts and SoX.</li>
+      <li>Applied lowpass and highpass filters to suppress or isolate harmonics.</li>
+      <li>Used Audacity’s spectrum analyzer for frequency analysis before and after filtering.</li>
+      <li>Comparative study on effectiveness of harmonic isolation and synthesis methods.</li>
+    </ul>
+  </div>
+
+  <div class="command">arunkr@rvce:~$ exit</div>
+  <span class="blink"></span>
+
+</div>
 </body>
 </html>
